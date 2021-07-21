@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+*{
+    margin: 0px 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Space Mono;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: hsl(185, 41%, 84%);;
+}
+/*this below div in not present in the code, only testing colors*/
+.test-colors{
+    background-color: hsl(183, 100%, 15%);
+    background-color: hsl(186, 14%, 43%);
+    background-color:hsl(184, 14%, 56%);
+    background-color: hsl(185, 41%, 84%);
+    background-color:hsl(189, 41%, 97%);
+    background-color: hsl(0, 0%, 100%);
+}
+#holder-div{
+    margin: 25vh auto;
+    position:relative;
+    /* border:2px solid red; */
+    border-radius: 20px;
+    width: 50vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: hsl(0, 0%, 100%) ;
+}
+.sub-holder{
+    height: 47vh;
+    width: 45%;
+    border-radius: 20px;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+}
+#right-div{
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.right-sub{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    width: 90%;
+    height: 20%;
+}
+#tip-amount{
+    margin-top: 30px;
+}
+#tip-total{
+    margin: 0px 0px;
+    margin-top: 15px;
+}
+.right-sub-bold{
+    color: hsl(0, 0%, 100%);
+}
+.person{
+    color: hsl(186, 14%, 56%);
+}
+.r-sub-sub{
+    display: block;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+}
+#tip-amount-person{
+    font-size: 250%;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+    text-align: right;
+}
+#tip-total-person{
+    font-size: 250%;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+    text-align: right;
+}
+
+#resets{
+    transition: all 0.25ms ease-in-out;
+    width: 80%;
+    height: 11.5%;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Space Mono;
+    color: hsla(183, 100%, 15%, 0.671);
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    margin-top: 28%;
+    outline: none;
+}
+#resets:hover{
+    cursor: pointer;
+    transition: all 0.25ms ease-in-out;
+    color: hsla(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+}
+#resets:active{
+    background-color: hsl(186, 14%, 43%);
+}
+#bill-div{
+    /* border: 2px solid black; */
+    height: 25%;
+}
+#tip-div{
+    /* border: 2px solid black; */
+    height: 50%;
+}
+#button-div{
+    margin-top: 2%;
+    height: 80%;
+    /* border: 1px solid black; */
+}
+.button-select{
+    font-family: Space Mono;
+    font-size: 125%;
+    margin-top: 10px;
+    margin-left: 2px;
+    width: 30%;
+    height: 25%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    font-weight: 700;
+    color: hsl(189, 41%, 97%);
+    border: none;
+    outline: none;
+}
+.button-select:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+#custom-tip{
+    font-family: Space Mono;
+    font-size: 125%;
+    margin: 0px;
+    width: 30%;
+    height: 25%;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    font-weight: 700;
+    color:hsl(183, 100%, 15%);
+    border: none;
+    outline: none;
+    text-align: right;
+}
+#custom-tip::placeholder{
+    color: hsl(186, 14%, 43%);
+    opacity: 1;
+    font-family: Space Mono;
+    font-size: 125%;
+    font-weight: 700;
+}
+#custom-tip:focus{
+    border: 2px solid hsl(172, 67%, 45%);
+    box-shadow: 0px 0px 2px hsl(172, 67%, 45%);
+}
+.button-select:active{
+     background-color: hsl(172, 67%, 45%);
+     color: hsl(183, 100%, 15%);
+}
+#number-of-people{
+    /* border: 2px solid black; */
+    height: 25%;
+}
+.normal-text{
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+.text-input{
+    border: none;
+    font-family: Space Mono;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    width: 90%;
+    height: 40%;
+    padding: 2% 2.5%;
+    font-size: 130%;
+    margin-top: 2%;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+.text-input:focus{
+    border: 2px solid hsl(172, 67%, 45%);
+    box-shadow: 0px 0px 4px hsl(172, 67%, 45%);
+}
+.nPerson{
+ border: hsl(0, 46%, 54%);
+ box-shadow: 0px 0px 4px hsl(0, 46%, 54%);
+}
+.text-input::placeholder{
+    font-weight: 700;
+    font-family: Space Mono;
+    font-size: 120%;
+    color: hsl(184, 14%, 56%) ;
+}
+
+.errorspan{
+    color: hsl(0, 46%, 54%);
+    font-size: 80%;
+}
