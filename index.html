@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+
+  <div id="holder-div">
+    <div class="sub-holder">
+      <div id="bill-div">
+        <span class="normal-text">Bill</span>  <br>
+        <input id="amount-input" type="text" placeholder="0" class="text-input">
+      </div>
+      <div id="tip-div">
+        <span class="normal-text">Select Tip % </span> <br>
+        <div id="button-div">
+          <button id="5cent" class="button-select">5%</button>
+          <button id="10cent" class="button-select">10%</button>
+          <button id="15cent" class="button-select">15%</button>
+          <button id="25cent" class="button-select">25%</button>
+          <button id="50cent" class="button-select">50%</button>
+          <input type="text" id="custom-tip" placeholder="Custom">
+          <span id="tip_error" class="errorspan"></span>
+        </div>
+      </div>
+      <div id="number-of-people">
+        <span class="normal-text">Number of People</span> <span class="errorspan" id="errorspan"></span> <br>
+        <input id="nPerson" type="text" placeholder="0" class="text-input">
+      </div>
+
+    </div>
+    <div class="sub-holder" id="right-div">
+      <div class="right-sub" id="tip-amount">
+        <div class="r-sub-sub">
+          <span class="right-sub-bold">Tip Amount</span><br>
+          <span class="person">/ person</span>
+        </div>
+        <div id="tip-amount-person" class="r-sub-sub">
+          $0.00
+        </div>
+      </div>
+      <div class="right-sub" id="tip-total">
+        <div class="r-sub-sub">
+          <span class="right-sub-bold">Total</span> <br>
+          <span class="person">/ person</span>
+        </div>
+        <div id="tip-total-person" class="r-sub-sub">
+          $0.00
+        </div>
+      </div>
+      <button id="resets">Reset</button>
+
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+<script src="index.js"></script>
+</script>
+</html>
